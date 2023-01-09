@@ -63,7 +63,7 @@ public class Lab02 {
 	}
 
 	
-	/* Asks the user for a, b, and c values in the quadratic formula.
+	/* Asks the user or a, b, and c values in the quadratic formula.
 	 * Then prints both x-intercepts.
 	 */
 	public static void problem4() {
@@ -76,9 +76,9 @@ public class Lab02 {
 		System.out.println("Enter c-value: ");
 		double c = inKey.nextDouble();
 		
-		double plus = -b+Math.sqrt(Math.pow(b, 2)-4*a*c)/(2*a);
+		double plus = (-b+Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
 		System.out.println("x1 = " + plus);
-		double minus = -b-Math.sqrt(Math.pow(b, 2)-4*a*c)/(2*a);
+		double minus = (-b-Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
 		System.out.println("x2 = " + minus);
 	}
 
