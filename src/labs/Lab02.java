@@ -45,17 +45,41 @@ public class Lab02 {
 		
 	}
 
-
+	// Asks the user for the coordinates of two points. Then prints the distance between these points.
 	public static void problem3() {
+		Scanner inKey = new Scanner(System.in);
 		
+		System.out.println("\n\nEnter x1: ");
+		double x1 = inKey.nextDouble();
+		System.out.println("Enter y1: ");
+		double y1 = inKey.nextDouble();
+		System.out.println("Enter x2: ");
+		double x2 = inKey.nextDouble();
+		System.out.println("Enter y2: ");
+		double y2 = inKey.nextDouble();
 		
+		double distance =  Math.sqrt(Math.pow((x2-x1), 2) + Math.pow((y2-y1), 2));
+		System.out.println("Distance between points = " + distance);
 	}
 
 	
-	
+	/* Asks the user for a, b, and c values in the quadratic formula.
+	 * Then prints both x-intercepts.
+	 */
 	public static void problem4() {
+		Scanner inKey = new Scanner(System.in);
 		
+		System.out.println("\n\nEnter a-value: ");
+		double a = inKey.nextDouble();
+		System.out.println("Enter b-value: ");
+		double b = inKey.nextDouble();
+		System.out.println("Enter c-value: ");
+		double c = inKey.nextDouble();
 		
+		double plus = -b+Math.sqrt(Math.pow(b, 2)-4*a*c)/(2*a);
+		System.out.println("x1 = " + plus);
+		double minus = -b-Math.sqrt(Math.pow(b, 2)-4*a*c)/(2*a);
+		System.out.println("x2 = " + minus);
 	}
 
 
